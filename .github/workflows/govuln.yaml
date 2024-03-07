@@ -2,12 +2,12 @@
 name: Go Vulnerability Checker
 on: 
   push: 
-    path-ignore:
+    paths-ignore:
       - '**.md'
       - '**.svg'
       - '**.png'
   pull_request:
-    path-ignore:
+    paths-ignore:
       - '**.md'
       - '**.svg'
       - '**.png'
