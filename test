@@ -3,6 +3,6 @@
 set -euo pipefail
 
 echo -e "\\e[91mDEPRECATED!!! Use test.sh script instead.\\e[0m\\n"
-sleep 1
+sleep 2
 
 source ./test.sh
