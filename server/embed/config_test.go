@@ -105,6 +105,7 @@ func TestConfigFileFeatureGates(t *testing.T) {
 			expectedFeatures: map[featuregate.Feature]bool{
 				features.DistributedTracing:      false,
 				features.StopGRPCServiceOnDefrag: false,
+				features.InitialCorruptCheck:     false,
 			},
 		},
 		{
@@ -120,6 +121,7 @@ func TestConfigFileFeatureGates(t *testing.T) {
 			expectedFeatures: map[featuregate.Feature]bool{
 				features.DistributedTracing:      true,
 				features.StopGRPCServiceOnDefrag: true,
+				features.InitialCorruptCheck:     false,
 			},
 		},
 		{
@@ -128,6 +130,7 @@ func TestConfigFileFeatureGates(t *testing.T) {
 			expectedFeatures: map[featuregate.Feature]bool{
 				features.StopGRPCServiceOnDefrag: true,
 				features.DistributedTracing:      false,
+				features.InitialCorruptCheck:     false,
 			},
 		},
 		{
@@ -136,6 +139,7 @@ func TestConfigFileFeatureGates(t *testing.T) {
 			expectedFeatures: map[featuregate.Feature]bool{
 				features.StopGRPCServiceOnDefrag: false,
 				features.DistributedTracing:      false,
+				features.InitialCorruptCheck:     false,
 			},
 		},
 		{
@@ -144,6 +148,7 @@ func TestConfigFileFeatureGates(t *testing.T) {
 			expectedFeatures: map[featuregate.Feature]bool{
 				features.StopGRPCServiceOnDefrag: true,
 				features.DistributedTracing:      false,
+				features.InitialCorruptCheck:     false,
 			},
 		},
 		{
@@ -152,6 +157,7 @@ func TestConfigFileFeatureGates(t *testing.T) {
 			expectedFeatures: map[featuregate.Feature]bool{
 				features.StopGRPCServiceOnDefrag: false,
 				features.DistributedTracing:      false,
+				features.InitialCorruptCheck:     false,
 			},
 		},
 	}
