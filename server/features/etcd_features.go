@@ -48,7 +48,7 @@ const (
 	// InitialCorruptCheck enable to check data corruption before serving any client/peer traffic.
 	// owner: @
 	// alpha: v3.6
-	// main PR:
+	// main PR: https://github.com/etcd-io/etcd/pull/10524
 	InitialCorruptCheck featuregate.Feature = "InitialCorruptCheck"
 )
 
